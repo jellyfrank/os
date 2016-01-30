@@ -1,0 +1,11 @@
+Authors
+=======
+
+Simone Orsi <simone.orsi@domsense.com> [simahawk]
+Lorenzo Battistini <lorenzo.battistini@agilebg.com>
+Stefan Rijnhart <stefan@therp.nl>
+Leonardo Pistone <leonardo.pistone@agilebg.com>
+
+work for odoo 8.0(rc1)
+=======
+Changed By QingDao Rainsoft(kfx2007@163.com)
