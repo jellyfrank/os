@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="rainsoft_order_form" model="ir.ui.view">
+			<field name="name">rainsoft.order.form</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='order_line']" position="before">
+				  <group>
+					<group>
+						<field name='data'/>
+					</group>					      
+					<group>				  
+						<button name='import_file' string='Import' type='object' class='oe_edit_only' states="draft" />
+					</group>
+				  </group>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>
