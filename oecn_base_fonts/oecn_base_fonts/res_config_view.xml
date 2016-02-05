@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_gerenal_configuration_oecn_base_font" model="ir.ui.view">
+            <field name="name">base.config.settings.oecn.base.font</field>
+            <field name="model">base.config.settings</field>
+            <field name="inherit_id" ref="base_setup.view_general_configuration"/>
+            <field name="arch" type="xml">
+                <xpath expr="//label[@string='Import / Export']/.." position="after">
+                    <group>
+                        <label for="id" string="RML Rrepot Font"/>
+                        <div name="base_font">
+                            <button string='Configure fonts mapping for pdf report' type="action" name="%(action_font_configuration_installer)d" class="oe_link"/>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

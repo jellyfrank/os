@@ -1,0 +1,111 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* oecn_base_fonts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-28 07:49+0000\n"
+"PO-Revision-Date: 2013-03-28 07:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oecn_base_fonts
+#: model:ir.model.fields,field_description:oecn_base_fonts.field_oecn_base_fonts_map_new_font
+#: field:oecn_base_fonts.map,new_font:0
+msgid "Replaced With"
+msgstr "替换为"
+
+#. module: oecn_base_fonts
+#: model:ir.model.fields,field_description:oecn_base_fonts.field_oecn_base_fonts_map_name
+#: field:oecn_base_fonts.map,name:0
+msgid "Font Alias"
+msgstr "字体别名"
+
+#. module: oecn_base_fonts
+#: model:ir.actions.act_window,name:oecn_base_fonts.action_font_configuration_installer
+msgid "Configure Font Mapping"
+msgstr "配置替换字体"
+
+#. module: oecn_base_fonts
+#: model:ir.model.fields,field_description:oecn_base_fonts.field_oecn_base_fonts_map_pdf_font
+#: field:oecn_base_fonts.map,pdf_font:0
+msgid "Original Fonts"
+msgstr "原字体"
+
+#. module: oecn_base_fonts
+#: view:oecn.font.installer:0
+msgid "Font replace"
+msgstr "替换字体"
+
+#. module: oecn_base_fonts
+#: model:ir.model,name:oecn_base_fonts.model_base_config_settings
+msgid "base.config.settings"
+msgstr "base.config.settings"
+
+#. module: oecn_base_fonts
+#: view:base.config.settings:0
+msgid "RML Rrepot Font"
+msgstr "RML 报表字体"
+
+#. module: oecn_base_fonts
+#: help:oecn_base_fonts.map,name:0
+msgid "use this font alias in custom rml report                             template"
+msgstr "在自定义的报表上使用此字体别名"
+
+#. module: oecn_base_fonts
+#: view:base.config.settings:0
+msgid "Configure fonts mapping for pdf report"
+msgstr "配置你的PDF报表字体"
+
+#. module: oecn_base_fonts
+#: view:oecn.font.installer:0
+msgid "Continue"
+msgstr "继续"
+
+#. module: oecn_base_fonts
+#: view:oecn.font.installer:0
+msgid "Customer Font Mapping Configuration"
+msgstr "配置自定义字体"
+
+#. module: oecn_base_fonts
+#: help:oecn.font.installer,wrap:0
+msgid "If you are using CJK fonts,                                check this option will wrap your                                words properly at the edge of the  pdf report"
+msgstr "如果你使用CJK字体，请勾选这个选项，让你的报表能按照CJK字体的风格换行。"
+
+#. module: oecn_base_fonts
+#: model:ir.model,name:oecn_base_fonts.model_oecn_base_fonts_map
+msgid "The line base fonts mapping"
+msgstr "字体替换明细"
+
+#. module: oecn_base_fonts
+#: view:oecn.font.installer:0
+msgid "title"
+msgstr "标题"
+
+#. module: oecn_base_fonts
+#: model:ir.model.fields,field_description:oecn_base_fonts.field_oecn_font_installer_wrap
+#: field:oecn.font.installer,wrap:0
+msgid "CJK wrap"
+msgstr "CJK 换行风格"
+
+#. module: oecn_base_fonts
+#: model:ir.model.fields,field_description:oecn_base_fonts.field_oecn_font_installer_map_ids
+#: field:oecn.font.installer,map_ids:0
+msgid "Replace Fonts"
+msgstr "替换的字体"
+
+#. module: oecn_base_fonts
+#: view:oecn.font.installer:0
+msgid "Fonts used in the default report may not support the characters in your lanuage. Use the setting here to replace the Original font with the font you choose. If any rml report incude setFonts='DajaVu sans', Is`s better to change the setFonts to your base Fonts"
+msgstr "系统的默认字体可能不适合你的报表。在这里你可以通过选择你需要的字体来替换系统原来的报表字体。"
+
+#. module: oecn_base_fonts
+#: model:ir.model,name:oecn_base_fonts.model_oecn_font_installer
+msgid "oecn.font.installer"
+msgstr "oecn.font.installer"

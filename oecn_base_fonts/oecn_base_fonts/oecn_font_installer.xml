@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- __author__ = jeff@openerp.cn, joshua@openerp.cn -->
+<openerp>
+    <data>
+        <record id="view_font_configuration_installer" model="ir.ui.view">
+            <field name="name">oecn.font.installer.form</field>
+            <field name="model">oecn.font.installer</field>
+            <field name="inherit_id" ref="base.res_config_installer"/>
+            <field name="arch" type="xml">
+                <form position="attributes" version="7.0">
+                    <attribute name="string">Customer Font Mapping Configuration</attribute>
+                </form>
+                <footer position="replace">
+                    <footer>
+                      <button name="action_next" type="object" string="Continue" class="oe_highlight"/>
+                    </footer>
+                </footer>
+                <separator string="title" position="replace">
+                    <p class="oe_grey">
+                        Fonts used in the default report may not support the characters in your lanuage. Use the setting here to replace the Original font with the font you choose.
+                    </p>
+                    <group>
+                        <field name="wrap" class="oe_inline"/>
+                        <field name="map_ids" nolabel="1" colspan="4">
+                        <tree string="Font replace" editable='top'>
+                            <field name = 'pdf_font'/>
+                            <field name = 'new_font' on_change="onchange_new_font(new_font)"/>
+                            <field name = 'name'/>
+                        </tree>
+                    </field>
+                    </group>
+                </separator>
+            </field>
+        </record>
+
+        <record id="action_font_configuration_installer" model="ir.actions.act_window">
+            <field name="name">Configure Font Mapping</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">oecn.font.installer</field>
+            <field name="view_id" ref="view_font_configuration_installer"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="font_configuration_installer_todo" model="ir.actions.todo">
+            <field name="action_id" ref="action_font_configuration_installer"/>
+            <field name="sequence">4</field>
+            <field name="type">automatic</field>
+        </record>
+
+    </data>
+</openerp>
