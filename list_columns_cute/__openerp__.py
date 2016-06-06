@@ -21,8 +21,9 @@
 	'version':'1.0',
 	'author':"Kevin Kong",
 	'category':"Others",
-	'data':[
-		'data.xml'
+	'data':['view.xml'],
+	'qweb':[
+		'static/src/xml/*.xml',
 	],
 	'installable':True,
 	'application':True,
