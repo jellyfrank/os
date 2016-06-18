@@ -48,27 +48,25 @@ class QunarPDFController(ReportController):
 			if type == 'qweb-pdf':
 				reportname = url.split('/report/pdf/')[1].split('?')[0]
 
-				docids = None
+				docids,filename = None,None
 				if '/' in reportname:
 					reportname, docids = reportname.split('/')
-				print docids,reportname
 				if docids:
 				    # Generic report:				    
 					response = self.report_routes(reportname, docids=docids, converter='pdf')
+					#Rename the pdf's name make it looks kindly.
+					report_ids = request.registry.get('ir.actions.report.xml').search(request.cr,openerp.SUPERUSER_ID,[('report_name','=',reportname)])
+					if len(report_ids):
+						report_obj = request.registry.get('ir.actions.report.xml').browse(request.cr,openerp.SUPERUSER_ID,report_ids[0])
+						docids = [int(x) for x in docids.split(',')]
+						reports = request.registry.get(report_obj.model).browse(request.cr,openerp.SUPERUSER_ID,docids)
+						filename = reports[0].name
 				else:
 				    # Particular report:
 					data = url_decode(url.split('?')[1]).items()  # decoding the args represented in JSON
-					response = self.report_routes(reportname, converter='pdf', **dict(data))
-
-				#Rename the pdf's name make it looks kindly.
-				report_ids = request.registry.get('ir.actions.report.xml').search(request.cr,openerp.SUPERUSER_ID,[('report_name','=',reportname)])
-				if len(report_ids):
-					report_obj = request.registry.get('ir.actions.report.xml').browse(request.cr,openerp.SUPERUSER_ID,report_ids[0])
-					docids = [int(x) for x in docids.split(',')]
-					reports = request.registry.get(report_obj.model).browse(request.cr,openerp.SUPERUSER_ID,docids)
-					filename = reports[0].name
+					response = self.report_routes(reportname, converter='pdf', **dict(data))				
 				
-				response.headers.add('Content-Disposition', 'attachment; filename=%s.pdf;' % filename)
+				response.headers.add('Content-Disposition', 'attachment; filename=%s.pdf;' % (filename or reportname))
 				response.set_cookie('fileToken', token)
 				return response
 			elif type =='controller':
