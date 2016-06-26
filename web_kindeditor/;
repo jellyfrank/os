@@ -1,0 +1,25 @@
+odoo.define('web_kindeditor.web_kindeditor',function(require){
+	'use strict';
+
+	var ajax = require('web.ajax');
+	var core = require('web.core');
+	var website = require('website.website');
+
+	var _t = core._t;
+
+	$('textarea.load_editor').each(function () {
+        var $textarea = $(this);
+        var $form = $textarea.closest('form');
+
+        KindEditor.ready(function(K){window.editor=K.create($('.note-editor'),{themeType:'default'})});
+        $form.off('click');
+        $form.on('click', 'button, .a-submit', function () {
+            window.editor.sync();
+            console.log($($form.find('.ke-editor').val()));
+            window.editor.html($('.note-editor').val());
+        });
+    });
+
+
+
+})

@@ -1,0 +1,39 @@
+<openerp>
+	<data>
+		<template id="assets_frontend" inherit_id="website.assets_frontend" name="Forum Assets">
+		    <xpath expr="." position="inside">
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/kindeditor-all.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/js/data.js"/>
+		        <!--<script type="text/javascript" src="/web_kindeditor/static/src/lib/lang/zh-CN.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/anchor/anchor.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/autoheight/autoheight.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/baidumap/baidumap.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/clearhtml/clearhtml.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/code/code.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/code/prettify.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/emoticons/emoticons.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/filemanager/filemanager.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/fixtoolbar/fixtoolbar.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/flash/flash.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/image/image.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/insertfile/insertfile.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/lineheight/lineheight.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/link/link.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/map/map.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/media/media.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/multiimage/multiimage.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/pagebreak/pagebreak.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/plainpaste/plainpaste.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/preview/preview.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/quickformat/quickformat.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/table/table.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/template/template.js"/>
+		        <script type="text/javascript" src="/web_kindeditor/static/src/lib/plugins/wordpaste/wordpaste.js"/>-->
+		        <link rel="stylesheet" href="/web_kindeditor/static/src/lib/plugins/code/prettify.css"/>
+		        <link rel="stylesheet" href="/web_kindeditor/static/src/lib/themes/default/default.css"/>
+
+		    </xpath>
+		</template>
+
+	</data>
+</openerp>
