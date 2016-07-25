@@ -26,6 +26,6 @@
 						<field name="target">new</field>
 				</record>
 
-				<menuitem id="menu_hm_region_import" name="Region Import" action="action_hm_region" parent="base.menu_config_address_book"/>
+				<menuitem id="menu_hm_region_import" name="Region Import" action="action_hm_region" parent="base.menu_localisation"/>
 		</data>
 </openerp>

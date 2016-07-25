@@ -21,9 +21,18 @@
 						<field name="arch" type="xml">
 								<tree string="city">
 										<field name="name"/>
+										<field name="state"/>
 								</tree>
 						</field>
 				</record>
+
+				<record model="ir.actions.act_window" id="action_hm_city">
+					<field name="name">hm city</field>
+					<field name="res_model">hm.city</field>
+					<field name="view_mode">tree,form</field>
+				</record>
+
+
 				<record model="ir.ui.view" id="hm_district_form_view">
 						<field name="name">hm.district.form.view</field>
 						<field name="model">hm.district</field>
@@ -37,5 +46,26 @@
 								</form>
 						</field>
 				</record>
+
+				<record model="ir.ui.view" id="hm_district_tree_view">
+						<field name="name">hm.district.form.view</field>
+						<field name="model">hm.district</field>
+						<field name="type">tree</field>
+						<field name="arch" type="xml">
+								<tree string="district">
+												<field name="name"/>
+												<field name="city"/>
+								</tree>
+						</field>
+				</record>
+
+				<record model="ir.actions.act_window" id="action_hm_district">
+					<field name="name">hm city</field>
+					<field name="res_model">hm.district</field>
+					<field name="view_mode">tree,form</field>
+				</record>
+
+				<menuitem id="menu_hm_city" name="City" action="action_hm_city" parent="base.menu_localisation"/>
+				<menuitem id="menu_hm_district" name="Distrcit" action="action_hm_district" parent="base.menu_localisation"/>
 		</data>
 </openerp>

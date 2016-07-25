@@ -1,0 +1,128 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* china_city
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 02:34+0000\n"
+"PO-Revision-Date: 2016-07-25 10:34+0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: zh\n"
+"X-Generator: Poedit 1.8.1\n"
+
+#. module: china_city
+#: model:ir.ui.menu,name:china_city.menu_hm_city
+msgid "City"
+msgstr "城市"
+
+#. module: china_city
+#: field:hm.city,create_uid:0 field:hm.district,create_uid:0
+#: field:hm.region,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: china_city
+#: field:hm.city,create_date:0 field:hm.district,create_date:0
+#: field:hm.region,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: china_city
+#: model:ir.ui.menu,name:china_city.menu_hm_district
+msgid "Distrcit"
+msgstr "区县"
+
+#. module: china_city
+#: field:hm.city,id:0 field:hm.district,id:0 field:hm.region,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: china_city
+#: view:hm.region:china_city.hm_region_view
+msgid "Import"
+msgstr "导入"
+
+#. module: china_city
+#: view:hm.region:china_city.hm_region_view
+msgid "Import Region"
+msgstr "地区资料导入"
+
+#. module: china_city
+#: field:hm.city,write_uid:0 field:hm.district,write_uid:0
+#: field:hm.region,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: china_city
+#: field:hm.city,write_date:0 field:hm.district,write_date:0
+#: field:hm.region,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: china_city
+#: model:ir.model,name:china_city.model_res_partner
+msgid "Partner"
+msgstr "合作伙伴"
+
+#. module: china_city
+#: model:ir.actions.act_window,name:china_city.action_hm_region
+#: model:ir.ui.menu,name:china_city.menu_hm_region_import
+msgid "Region Import"
+msgstr "导入区域"
+
+#. module: china_city
+#: model:ir.model,name:china_city.model_res_users
+msgid "Users"
+msgstr "用户"
+
+#. module: china_city
+#: field:hm.region,xls:0
+msgid "XLS File"
+msgstr "Excel文件"
+
+#. module: china_city
+#: view:res.partner:china_city.hm_partner_form_view
+msgid "[('country_id','=',country_id)]"
+msgstr "[('country_id','=',country_id)]"
+
+#. module: china_city
+#: view:res.partner:china_city.hm_partner_form_view
+msgid "[('state','=',state_id)]"
+msgstr "[('state','=',state_id)]"
+
+#. module: china_city
+#: view:hm.city:china_city.hm_city_form_view
+#: view:hm.city:china_city.hm_city_tree_view field:hm.district,city:0
+#: field:res.users,city:0
+msgid "city"
+msgstr "城市"
+
+#. module: china_city
+#: view:hm.district:china_city.hm_district_form_view
+#: view:hm.district:china_city.hm_district_tree_view
+#: field:res.partner,district:0
+msgid "district"
+msgstr "区"
+
+#. module: china_city
+#: model:ir.actions.act_window,name:china_city.action_hm_city
+#: model:ir.actions.act_window,name:china_city.action_hm_district
+msgid "hm city"
+msgstr "城市"
+
+#. module: china_city
+#: field:hm.city,name:0 field:hm.district,name:0
+msgid "name"
+msgstr "名称"
+
+#. module: china_city
+#: field:hm.city,state:0
+msgid "state"
+msgstr "省"
