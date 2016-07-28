@@ -39,7 +39,7 @@ class hm_region(osv.osv):
 														self.pool.get('hm.district').create(cr,uid,{'name':district,'city':c_id})		
 										else:
 												model,china = self.pool.get('ir.model.data').get_object_reference(cr,uid,'base','cn')
-												if china:
+												if len(china):
 														s_id = self.pool.get('res.country.state').create(cr,uid,{'name':state,'country_id':china,'code':'0'})
 														c_id=self.pool.get('hm.city').create(cr,uid,{'name':city,'state':s_id})
 														self.pool.get('hm.district').create(cr,uid,{'name':district,'city':c_id})

@@ -29,7 +29,9 @@ This model changes the format of partner's address,makes it looks much better fr
 		"author":"Kevin Kong",
 		"website":"http://www.qdrainsoft.com",
 		"depends":["base"],
-                "data":["hm_city_view.xml","hm_region_view.xml","hm_partner_view.xml"],
+        "data":["hm_city_view.xml","hm_region_view.xml","hm_partner_view.xml",
+                "res_company_view.xml",
+                ],
 		"installable":True,
 		"category":"Generic Modules/Others"
 }
