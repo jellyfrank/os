@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="qunar_company_description" name="Company Description" inherit_id="website.company_description" >
+			<xpath expr="//a" position="replace">
+				<a t-att-href="res_company.baidu_map_link()" target="_BLANK">
+        			<img class="thumbnail img-responsive" t-att-src="res_company.baidu_map_img()" />
+   				 </a>
+			</xpath>
+		</template>
+	</data>
+</openerp>
