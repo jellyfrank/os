@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="qunar_supplierinfo_tree_view">
+			<field name="name">ProductSupplierInfo</field>
+			<field name="model">product.supplierinfo</field>
+			<field name="inherit_id" ref="product.product_supplierinfo_tree_view"/>
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<field name="default_code"/>
+					<field name="product_tmpl_id"/>
+					<field name="product_code"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_qunar_supplierinfo">
+			<field name="name">SupplierInfo</field>
+			<field name="res_model">product.supplierinfo</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="menu_qunar_supplierinfo" name="SupplierInfo" action="action_qunar_supplierinfo" parent="purchase.menu_procurement_management_product" />
+	</data>
+</openerp>
