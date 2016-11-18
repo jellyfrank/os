@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+		<record model='ir.ui.view' id='qunar_google_auth_form_view'>
+			<field name="name">google authentication</field>
+			<field name="model">res.users</field>
+			<field name="inherit_id" ref="base.view_users_form"/>
+			<field name="arch" type="xml">
+				<field name="active" position="after">
+					<field name="enable_google_auth"/>
+				</field>
+				<xpath expr="//page[@string='Preferences']" position='after'>
+					<page string="Google Authentication" attrs="{'invisible':[('enable_google_auth','=',False)]}">
+						<button name="btn_gen" type="object" string='生成/更换秘钥'/>
+						<group>
+							<field name="google_auth_img" widget="image"/>
+							<field name="otp_str" invisible="1"/>
+						</group>
+					</page>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>
