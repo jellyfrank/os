@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+    <t t-extend="GraphWidget">
+        <t t-jquery="label[title='Pie Chart']" t-operation="after">
+            <label class="btn btn-default" data-mode="radar" title="Radar Chart">
+                <input type="radio" name="modes"/><span class="fa fa-bug"></span>
+            </label>
+        </t>
+    </t>
+</templates>
