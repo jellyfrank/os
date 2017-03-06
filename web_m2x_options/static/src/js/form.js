@@ -10,7 +10,9 @@ openerp.web_m2x_options = function (instance) {
 
     var OPTIONS = ['web_m2x_options.create',
 	           'web_m2x_options.create_edit',
+                   'web_m2x_options.many2x_limit',
 		   'web_m2x_options.limit',];
+
 
     instance.web.form.FieldMany2One.include({
 
@@ -78,6 +80,8 @@ openerp.web_m2x_options = function (instance) {
                     "check_access_rights", ["create", false]);
             }
 
+            var m2x_limit = parseInt(this.view.ir_options['web_m2x_options.many2x_limit']) || 80 ;
+
             $.when(search_result, create_rights).then(function (data, can_create) {
 
                 self.can_create = can_create;  // for ``.show_error_displayer()``
@@ -102,7 +106,7 @@ openerp.web_m2x_options = function (instance) {
                         action: function () {
                             dataset.name_search(
                                 search_val, self.build_domain(),
-                                'ilike', false).done(function (data) {
+                                'ilike', m2x_limit).done(function (data) {
                                     self._search_create_popup("search", data);
                                 });
                         },
