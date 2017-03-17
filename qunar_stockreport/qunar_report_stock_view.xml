@@ -49,17 +49,17 @@
 					<field name="product_cate"/>
 					<field name="uom"/>
 					<field name="last_remainder" sum="total"/>
-					<field name="last_amt" sum="total"/>
+					<field name="last_amt" sum="total" groups="stock.group_stock_manager"/>
 					<field name="in_stock_qty" sum="total"/>
-					<field name="in_stock_amt" sum="total"/>
+					<field name="in_stock_amt" sum="total" groups="stock.group_stock_manager"/>
 					<field name="out_stock_qty" sum="total"/>
-					<field name="out_stock_amt" sum="total"/>
+					<field name="out_stock_amt" sum="total" groups="stock.group_stock_manager"/>
 					<field name="inventory_short_qty" invisible="1"/>
-					<field name="inventory_short_amt" invisible="1"/>
+					<field name="inventory_short_amt" invisible="1" groups="stock.group_stock_manager"/>
 					<field name="inventory_over_qty" invisible="1"/>
-					<field name="inventory_over_amt" invisible="1"/>
+					<field name="inventory_over_amt" invisible="1" groups="stock.group_stock_manager"/>
 					<field name="remainder_qty" sum="total"/>
-					<field name="remainder_amt" sum="total"/>
+					<field name="remainder_amt" sum="total" groups="stock.group_stock_manager"/>
 				</tree>
 			</field>
 		</record>

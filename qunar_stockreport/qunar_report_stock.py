@@ -336,5 +336,5 @@ class qunar_report_stock_line(osv.osv):
 		'inventory_over_qty': fieldss.float('Inventory Over Quantity'),
 		'inventory_over_amt': fieldss.float('Inventory Over Amount'),
 		'remainder_qty': fieldss.float('Remainder Qty'),
-		'remainder_amt': fieldss.function(_get_remainder,'Remainder Amount'),
+		'remainder_amt': fieldss.float('Remainder Amount'),
 	}
