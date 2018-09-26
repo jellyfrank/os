@@ -330,7 +330,7 @@ class qunar_report_stock_wizard(models.Model):
 		res = {
 			'name':_('Stock Report ')+ (wizd.period and wizd.period.name or date_start+'-'+date_stop),
 			'res_model':'qunar.report.stock.line',
-			'view_mode':'tree,form',
+			'view_mode':'tree,form,pivot',
 			'type':'ir.actions.act_window',
 			}
 
