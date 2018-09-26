@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="qunar_report_stock_wizard_view">
+			<field name="name">qunar.report.stock.wizard.form</field>
+			<field name="model">qunar.report.stock.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Qunar Report Stock Wizard">
+					<separator string="Stock Report Wizard"/>
+					<group>
+						<field name="usage"/>	
+					</group>
+					<group>
+						<field name="period" attrs="{'invisible':[('usage','!=','period')]}"/>
+						<group attrs="{'invisible':[('usage','!=','custom')]}">
+							<field name="date_start"/>-<field name="date_stop"/>
+						</group>						
+					</group>	
+					<group>
+						<field name="stock_location"/>
+						<field name="method"/>
+					</group>				
+					<footer>
+						<button name="btn_query" type="object" string="Query" class="oe_highlight"/>
+						or
+						<button string="cancel" special="cancel" class="oe_link"/>
+					</footer>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_qunar_report_stock_wizard">
+			<field name="name">Stock Report Wizard</field>
+			<field name="res_model">qunar.report.stock.wizard</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+		<menuitem id="qunar_report" name="Report" parent="stock.menu_stock_root" />
+
+		<menuitem id="qunar_report_stock" action="action_qunar_report_stock_wizard" parent="qunar_report" name="Stock Report"/>
+
+		<record model="ir.ui.view" id="qunar_report_stock_line_tree_view">
+			<field name="name">qunar.report.stock.line.tree</field>
+			<field name="model">qunar.report.stock.line</field>
+			<field name="arch" type="xml">
+				<tree string="Qunar Report Stock Line">
+					<field name="product_id"/>
+					<field name="product_cate"/>
+					<field name="uom"/>
+					<field name="last_remainder" sum="total"/>
+					<field name="last_amt" sum="total" groups="stock.group_stock_manager"/>
+					<field name="in_stock_qty" sum="total"/>
+					<field name="in_stock_amt" sum="total" groups="stock.group_stock_manager"/>
+					<field name="out_stock_qty" sum="total"/>
+					<field name="out_stock_amt" sum="total" groups="stock.group_stock_manager"/>
+					<field name="inventory_short_qty" invisible="1"/>
+					<field name="inventory_short_amt" invisible="1" groups="stock.group_stock_manager"/>
+					<field name="inventory_over_qty" invisible="1"/>
+					<field name="inventory_over_amt" invisible="1" groups="stock.group_stock_manager"/>
+					<field name="remainder_qty" sum="total"/>
+					<field name="remainder_amt" sum="total" groups="stock.group_stock_manager"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="qunar_report_stock_graph_view">
+			<field name="name">qunar.report.stock.line.graph</field>
+			<field name="model">qunar.report.stock.line</field>
+			<field name="arch" type="xml">
+				<graph string="Purchase Orders Statistics" type="pivot">
+					<field name="product_id"/>
+					<field name="product_cate"/>
+					<field name="last_remainder"/>
+					<field name="last_amt"/>
+				</graph>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="qunar_report_stock_search_view">
+			<field name="name">Search View</field>
+			<field name="model">qunar.report.stock.line</field>
+			<field name="arch" type="xml">
+				<search string="search report">
+					<field name="product_id" string="Product" filter_domain="['|',('product_id.default_code','ilike',self),('product_id.name','ilike',self)]"/>
+					<filter string="None Zero" domain="['|','|',('last_remainder','!=',0),('in_stock_qty','!=',0),'|','|',('out_stock_qty','!=',0),('inventory_short_qty','!=',0),('inventory_over_qty','!=',0)]"/>
+					<group expand="0" string="Group by...">
+						<filter string="Category" domain="[]" context="{'group_by':'product_cate'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+
+	</data>
+</openerp>

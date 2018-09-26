@@ -1,0 +1,256 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* qunar_stockreport
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-16 10:03+0000\n"
+"PO-Revision-Date: 2017-03-16 18:05+0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: zh\n"
+"X-Generator: Poedit 1.8.1\n"
+
+#. module: qunar_stockreport
+#: selection:qunar.report.stock.wizard,method:0
+msgid "Average"
+msgstr "平均"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_search_view
+msgid "Category"
+msgstr "产品分类"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,create_uid:0
+msgid "Created by"
+msgstr "创建于"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,create_date:0
+msgid "Created on"
+msgstr "创建于"
+
+#. module: qunar_stockreport
+#: code:addons/qunar_stockreport/qunar_report_stock.py:28
+#: selection:qunar.report.stock.wizard,usage:0
+#, python-format
+msgid "Custom"
+msgstr "自定义"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,date_start:0
+msgid "Date Start"
+msgstr "开始日期"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,date_stop:0
+msgid "Date Stop"
+msgstr "截止日期"
+
+#. module: qunar_stockreport
+#: code:addons/qunar_stockreport/qunar_report_stock.py:46
+#, python-format
+msgid "Error!"
+msgstr "错误！"
+
+#. module: qunar_stockreport
+#: selection:qunar.report.stock.wizard,method:0
+msgid "FIFO"
+msgstr "先进先出"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_search_view
+msgid "Group by..."
+msgstr "分组..."
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,id:0 field:qunar.report.stock.wizard,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,in_stock_amt:0
+msgid "In Stock Amount"
+msgstr "入库金额"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,in_stock_qty:0
+msgid "In Stock Quantity"
+msgstr "入库数量"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,last_amt:0
+msgid "Init Amount"
+msgstr "期初金额"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,last_remainder:0
+msgid "Init Qty"
+msgstr "期初数量"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,inventory_over_amt:0
+msgid "Inventory Over Amount"
+msgstr "盘盈金额"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,inventory_over_qty:0
+msgid "Inventory Over Quantity"
+msgstr "盘盈数量"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,inventory_short_amt:0
+msgid "Inventory Short Amount"
+msgstr "盘亏金额"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,inventory_short_qty:0
+msgid "Inventory Short Quantity"
+msgstr "盘亏数量"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,write_uid:0
+msgid "Last Updated by"
+msgstr "最后更新于"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,write_date:0
+msgid "Last Updated on"
+msgstr "最后更新于"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,stock_location:0
+msgid "Location"
+msgstr "库位"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,method:0
+msgid "Method"
+msgstr "核算方法"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_search_view
+msgid "None Zero"
+msgstr "非零数据"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,out_stock_amt:0
+msgid "Out Stock Amount"
+msgstr "出库金额"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,out_stock_qty:0
+msgid "Out Stock Quantity"
+msgstr "出库数量"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,period:0
+#: selection:qunar.report.stock.wizard,usage:0
+msgid "Period"
+msgstr "会计区间"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_search_view
+#: field:qunar.report.stock.line,product_id:0
+msgid "Product"
+msgstr "产品"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,product_cate:0
+msgid "Product Category"
+msgstr "产品分类"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_graph_view
+msgid "Purchase Orders Statistics"
+msgstr "采购订单明细分析"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.wizard:qunar_stockreport.qunar_report_stock_wizard_view
+msgid "Query"
+msgstr "查询"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_line_tree_view
+msgid "Qunar Report Stock Line"
+msgstr "进销存报表"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.wizard:qunar_stockreport.qunar_report_stock_wizard_view
+msgid "Qunar Report Stock Wizard"
+msgstr "进销存报表向导"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,remainder_qty:0
+msgid "Remainder Qty"
+msgstr "结余数量"
+
+#. module: qunar_stockreport
+#: model:ir.ui.menu,name:qunar_stockreport.qunar_report
+msgid "Report"
+msgstr "报表"
+
+#. module: qunar_stockreport
+#: code:addons/qunar_stockreport/qunar_report_stock.py:46
+#, python-format
+msgid "Scrapped Location Doesn't Exists!"
+msgstr "盘盈盘亏库位不存在！"
+
+#. module: qunar_stockreport
+#: model:ir.ui.menu,name:qunar_stockreport.qunar_report_stock
+msgid "Stock Report"
+msgstr "进销存报表"
+
+#. module: qunar_stockreport
+#: code:addons/qunar_stockreport/qunar_report_stock.py:304
+#, python-format
+msgid "Stock Report "
+msgstr "进销存报表"
+
+#. module: qunar_stockreport
+#: model:ir.actions.act_window,name:qunar_stockreport.action_qunar_report_stock_wizard
+#: view:qunar.report.stock.wizard:qunar_stockreport.qunar_report_stock_wizard_view
+msgid "Stock Report Wizard"
+msgstr "进销存报表向导"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,uom:0
+msgid "Unit"
+msgstr "单位"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.wizard,usage:0
+msgid "Usage"
+msgstr "筛选类型"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.wizard:qunar_stockreport.qunar_report_stock_wizard_view
+msgid "cancel"
+msgstr "取消"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.wizard:qunar_stockreport.qunar_report_stock_wizard_view
+msgid "or"
+msgstr "或"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_search_view
+msgid "search report"
+msgstr "搜索视图"
+
+#. module: qunar_stockreport
+#: view:qunar.report.stock.line:qunar_stockreport.qunar_report_stock_line_tree_view
+msgid "total"
+msgstr "总计"
+
+#. module: qunar_stockreport
+#: field:qunar.report.stock.line,remainder_amt:0
+msgid "unknown"
+msgstr "结余金额"

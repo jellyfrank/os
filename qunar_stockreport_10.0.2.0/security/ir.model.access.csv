@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_qunar_report_stock_wizard,qunar.report.stock.wizard,model_qunar_report_stock_wizard,stock.group_stock_user,1,1,1,1
+access_qunar_report_stock_line,qunar.report.stock.line,model_qunar_report_stock_line,stock.group_stock_user,1,1,1,1
